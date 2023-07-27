@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> Preston's Auto Detailing
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Detailing Website</title>
+    <title>Preston's Auto Detailing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <!-- Add your navigation links here -->
+            <h1>Preston's Auto Detailing</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <!-- Hero section with a catchy image and headline -->
+        <section id="home">
+            <h2>Welcome to Preston's Auto Detailing</h2>
+            <p>We offer top-notch car detailing services to make your vehicle shine like new.</p>
+            <button>Contact Us</button>
         </section>
 
         <section id="services">
-            <!-- Services section showcasing different detailing services -->
+            <h2>Our Services</h2>
+            <ul>
+                <li>Exterior Detailing</li>
+                <li>Interior Detailing</li>
+                <li>Paint Correction</li>
+                <li>Wheel and Tire Care</li>
+                <li>Headlight Restoration</li>
+            </ul>
         </section>
 
         <section id="gallery">
-            <!-- Gallery section displaying images of detailed cars -->
+            <h2>Gallery</h2>
+            <div class="image-gallery">
+                <!-- Add images of detailed cars here -->
+                <!-- Example: <img src="car1.jpg" alt="Car 1"> -->
+            </div>
         </section>
 
         <section id="contact">
-            <!-- Contact section with a form for inquiries -->
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <!-- Footer content and copyright information -->
+        <p>&copy; 2023 Preston's Auto Detailing. All rights reserved.</p>
     </footer>
 </body>
 </html>
